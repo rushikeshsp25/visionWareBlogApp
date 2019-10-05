@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.form-container {
+    width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    border: black 2px solid;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.contact-form input {
+    width: 100%;
+}

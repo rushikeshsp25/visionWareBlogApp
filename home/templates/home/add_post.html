@@ -1,0 +1,17 @@
+{% extends 'home/base.html' %}
+
+{% block title %}Add Post | Blogsite{% endblock title %} 
+
+{% block content %}
+<div class="form-container">
+    <form method="POST" action="/addpost/">
+        {% csrf_token %}
+        <h5 class="center mb-2">Add Post</h5>
+        <input type="text" class="form-control" placeholder="Post Title" name="title">
+        <textarea class="form-control" placeholder="Post Content" name="content"></textarea>
+        <div class="center">
+            <button type="submit" class="btn btn-success mb-2 ">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}

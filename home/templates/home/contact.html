@@ -1,0 +1,11 @@
+{% extends 'home/base.html' %} {% block title %}Contact US | Blogsite{% endblock title %} {% block content %}
+<div class="form-container contact-form">
+    <form method="POST" action="" novalidate>
+        <h5 class="center mb-2">Contact Us</h5>
+        {% csrf_token %} {{form}}
+        <div class="center">
+            <button type="submit" class="btn btn-success mb-2">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}
